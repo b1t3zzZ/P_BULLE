@@ -4,7 +4,6 @@
  * Retourne le message d'accès correspondant au niveau.
  */
 export function accessMessage(level) {
-  // TODO
     if(level >= 5){
         return "Accès autorisé"
     }
@@ -18,7 +17,6 @@ export function accessMessage(level) {
  * Retourne l'état textuel d'une porte.
  */
 export function doorStatus(isOpen) {
-  // TODO
     return isOpen ? "Ouverte" : "Fermée";
 }
 
@@ -26,7 +24,6 @@ export function doorStatus(isOpen) {
  * Retourne le nom de la zone correspondant à un code.
  */
 export function zoneName(code) {
-  // TODO
     switch(code) {
         case 'N': return 'Les Fondations';
         case 'E': return 'Les Archives';
@@ -42,7 +39,6 @@ export function zoneName(code) {
  * Détermine le niveau d'alerte selon l'énergie disponible.
  */
 export function alertLevel(energy) {
-  // TODO
     if(energy < 20){
         return "CRITIQUE";
     }
