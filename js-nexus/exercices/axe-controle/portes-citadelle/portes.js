@@ -5,6 +5,13 @@
  */
 export function accessMessage(level) {
   // TODO
+    if(level >= 5){
+        return "Accès autorisé"
+    }
+    else{
+        return "Accès refusé"
+    }
+
 }
 
 /**
@@ -12,6 +19,7 @@ export function accessMessage(level) {
  */
 export function doorStatus(isOpen) {
   // TODO
+    return isOpen ? "Ouverte" : "Fermée";
 }
 
 /**
@@ -19,6 +27,15 @@ export function doorStatus(isOpen) {
  */
 export function zoneName(code) {
   // TODO
+    switch(code) {
+        case 'N': return 'Les Fondations';
+        case 'E': return 'Les Archives';
+        case 'SE': return 'La Forge';
+        case 'SO': return 'La Citadelle';
+        case 'O': return 'La Faille';
+        case 'X': return 'Zone inconnue';
+        default: return  'Zone inconnue' ;
+    }
 }
 
 /**
@@ -26,4 +43,17 @@ export function zoneName(code) {
  */
 export function alertLevel(energy) {
   // TODO
+    if(energy < 20){
+        return "CRITIQUE";
+    }
+    else if(energy >= 20 && energy <= 49){
+        return "FAIBLE";
+    }
+    else if(energy >= 50 && energy <= 79){
+        return "STABLE";
+    }
+    else {
+        return "OPTIMAL";
+    }
+
 }
