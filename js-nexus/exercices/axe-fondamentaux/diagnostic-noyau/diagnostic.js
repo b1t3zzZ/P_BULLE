@@ -46,5 +46,5 @@ export function hasEnoughEnergy(energy, minimumEnergy) {
  * Compare strictement le nom de la zone attendue.
  */
 export function isCorrectZone(zone, expectedZone) {
-  return zone === expectedZone ? true : false;
+    return zone === expectedZone;
 }
