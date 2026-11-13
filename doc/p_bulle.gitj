@@ -1,0 +1,54 @@
+{
+  "projectName": "P_Bulle",
+  "me": "Maksym Tsybulevskyi",
+  "journalStartDate": null,
+  "columns": [
+    {
+      "label": "Date",
+      "source": "date",
+      "format": "date",
+      "field": "date"
+    },
+    {
+      "label": "Tâche",
+      "source": "name",
+      "field": "name"
+    },
+    {
+      "label": "Description",
+      "source": "description",
+      "field": "description"
+    },
+    {
+      "label": "Durée",
+      "source": "duration",
+      "format": "duration",
+      "field": "duration"
+    },
+    {
+      "label": "Statut",
+      "source": "status",
+      "format": "badge",
+      "field": "status"
+    },
+    {
+      "label": "Auteur",
+      "source": "author"
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "821992f6-d895-4074-ac34-6530192a58fa",
+      "type": "commitpatch",
+      "sha": "699716c81d6f3a2fc38977d052b35b27a25ef1ac",
+      "url": "https://github.com/b1t3zzZ/P_BULLE/commit/699716c81d6f3a2fc38977d052b35b27a25ef1ac",
+      "author": "Maksym Tsybulevskyi",
+      "patch": true,
+      "date": "2026-11-06T14:29:00.000Z",
+      "name": "feat(diagnostic-noyau): Regler les verifications",
+      "description": "",
+      "duration": 20,
+      "status": "Done"
+    }
+  ]
+}
