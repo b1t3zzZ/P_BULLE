@@ -4,33 +4,36 @@
  * Convertit un relevé en nombre.
  */
 export function readRainfall(value) {
-  // TODO
+  return Number(value);
 }
 
 /**
  * Additionne deux relevés après les avoir convertis en nombres.
  */
 export function totalRainfall(morning, evening) {
-  // TODO
+  return Number(morning) + Number(evening);
 }
 
 /**
  * Indique si l'heure correspond à un relevé automatique (toutes les 3 heures).
  */
 export function isScheduledHour(hour) {
-  // TODO
+  return hour % 3 === 0;
 }
 
 /**
  * Indique si la conversion du relevé produit NaN.
  */
 export function isFaultyReading(value) {
-  // TODO
-}
 
+    return Number(isNaN(value)) ? true : false;
+}
 /**
  * Compare strictement deux relevés après conversion en nombres.
  */
 export function isConfirmedReading(manual, automatic) {
-  // TODO
+  if(Number(manual) === Number(automatic)) {
+      return true;
+  }
+  else return false;
 }
