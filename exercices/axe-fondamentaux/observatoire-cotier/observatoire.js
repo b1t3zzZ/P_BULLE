@@ -1,45 +1,68 @@
 // @ts-check
 
 /**
- * Retourne le type JavaScript de la donnée.
+ *
+ * @param value N'importe lequel valeur
+ * @returns {"undefined"|"object"|"boolean"|"number"|"string"|"function"|"symbol"|"bigint"} Retourne le type de value
  */
 export function dataType(value) {
-  // TODO
+  return typeof value;
 }
 
 /**
- * Indique si le comptage vaut undefined.
+ *
+ * @param count N'importe lequel valeur
+ *
+ * @returns {boolean} Retourne true si c'est undefined et false pour le reste
+ *
  */
 export function isNotTransmitted(count) {
-  // TODO
+    return count === undefined;
 }
 
 /**
- * Indique si le comptage vaut null.
+ *
+ * @param count N'importe lequel valeur
+ * @returns {boolean} Retourne true si c'est undefined et false pour le reste
  */
 export function isOffline(count) {
-  // TODO
+  return count === null;
 }
 
 /**
- * Indique si un comptage est disponible, c'est-à-dire
- * différent de undefined et de null.
+ *
+ * @param count N'importe lequel valeur
+ *
+ * @returns {boolean} Retourne true si ce n'est pas undefined et null
+ *
  */
 export function hasBirdCount(count) {
-  // TODO
+  return count !== undefined && count !== null;
 }
 
 /**
- * Additionne les deux comptages.
- * Un comptage indisponible compte pour 0.
+ *
+ * @param northCount Soit le nombre, soit undefined/null
+ *
+ * @param southCount Soit le nombre, soit undefined/null
+ *
+ * @returns {number} le nombre calculer, undefind/null = 0
+ *
  */
 export function totalBirds(northCount, southCount) {
-  // TODO
+    let value1 = northCount ?? 0;
+    let value2 = southCount ?? 0;
+
+    return value1 + value2;
 }
 
 /**
- * Indique si la hauteur est de type number et n'est pas NaN.
+ *
+ * @param height Le nombre de la hauteur des vagues
+ *
+ * @returns {boolean} True si height est le nombre
+ *
  */
 export function isValidWaveHeight(height) {
-  // TODO
+    return Number(height) === height ;
 }
